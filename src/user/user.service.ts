@@ -39,7 +39,7 @@ export class UserService {
     })
   }
 
-  async remove(id: number) {
+  async delete(id: number) {
     return this.databaseService.user.delete({
       where:{
         id,
