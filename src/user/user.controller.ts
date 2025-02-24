@@ -13,7 +13,7 @@ export class UserController {
     }
 
     @Get(':id')
-    findOne(@Param('id', ParseIntPipe) id: number) {
+    findOne(@Param('id', ParseIntPipe) id: string) {
         return this.userService.findOne(id)
     }
 
@@ -23,12 +23,12 @@ export class UserController {
     }
 
     @Patch() //POST /users/:id
-    update(@Param('id', ParseIntPipe) id: number, @Body(ValidationPipe) userUpdate: UpdatedUserDto) {
+    update(@Param('id', ParseIntPipe) id: string, @Body(ValidationPipe) userUpdate: UpdatedUserDto) {
         return this.userService.update(id, userUpdate)
     }
 
     @Delete(':id') // DELETE /users/:id
-    delete(@Param('id', ParseIntPipe) id: number) {
+    delete(@Param('id', ParseIntPipe) id: string) {
         return this.userService.delete(id)
     }
 }
