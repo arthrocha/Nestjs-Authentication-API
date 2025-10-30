@@ -1,18 +1,18 @@
-# 🚀 Nestjs Authentication API
+# Nestjs Authentication API
 
-## 📌 Overview
+## Overview
 
 This is an authentication API built using [NestJS](https://nestjs.com/), with authentication and role-based access control implemented using [JWT](https://jwt.io/) and [Passport.js](http://www.passportjs.org/). The API also uses [Prisma ORM](https://www.prisma.io/) to interact with a PostgreSQL database.
 
-### ✨ Features:
+### Features:
 
-- ✅ User authentication with JWT.
-- 🔐 Role-based access control (Intern, Engineer, Admin).
-- 🔑 Encrypted password storage.
-- 🧪 Unit tests for core functionality.
-- 🔄 Ongoing development of password recovery feature.
+- User authentication with JWT.
+- Role-based access control (Intern, Engineer, Admin).
+- Encrypted password storage.
+- Unit tests for core functionality.
+- Ongoing development of password recovery feature.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **NestJS**: A progressive Node.js framework.
 - **Prisma ORM**: Database management with PostgreSQL.
@@ -22,7 +22,7 @@ This is an authentication API built using [NestJS](https://nestjs.com/), with au
 - **Validation Pipes**: Ensuring data integrity.
 - **Unit Testing**: API reliability.
 
-## ⚡ Installation
+## Installation
 
 ### Prerequisites
 
@@ -57,7 +57,7 @@ Ensure you have the following installed:
    npm run start:dev
    ```
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 project-root/
@@ -85,15 +85,15 @@ project-root/
 │── README.md
 ```
 
-## 🔗 API Endpoints
+## API Endpoints
 
-### 🔑 Authentication Routes
+### Authentication Routes
 
 | Method | Endpoint      | Description                            |
 | ------ | ------------- | -------------------------------------- |
 | POST   | `/auth/login` | Logs in a user and returns a JWT token |
 
-### 👥 User Routes
+### User Routes
 
 | Method | Endpoint    | Description                                         |
 | ------ | ----------- | --------------------------------------------------- |
@@ -105,7 +105,7 @@ project-root/
 
 ## 📤 Request & Response Examples
 
-### **🔐 POST /auth/login**
+### ** POST /auth/login**
 #### **Request:**
 ```json
 {
@@ -121,7 +121,7 @@ project-root/
 ```
 ---
 
-### **➕ POST /user** (Public - Create a new user)
+### ** POST /user** (Public - Create a new user)
 #### **Request:**
 ```json
 {
@@ -144,7 +144,7 @@ project-root/
 ```
 ---
 
-### **📥 GET /user** (Retrieve all users)
+### **GET /user** (Retrieve all users)
 #### **Request:**  
 ```http
 GET /user
@@ -168,13 +168,13 @@ Authorization: Bearer <your_jwt_token>
 ]
 ```
 
-## 🔒 Role-Based Access Control (RBAC)
+## Role-Based Access Control (RBAC)
 
 - **Intern**: Limited access.
 - **Engineer**: Access to most features.
 - **Admin**: Full access to user management.
 
-## 🧪 Unit Testing
+## Unit Testing
 
 To run the tests:
 
@@ -182,7 +182,7 @@ To run the tests:
 npm run test
 ```
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Implement password recovery feature.
 - Add API documentation using Swagger.
